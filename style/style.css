@@ -6,7 +6,7 @@
 
 .parallax {
   /* The image used */
-  background-image: url("img/tl2.jpg");
+  background-image: url("../img/tl2.jpg");
 
   /* Set a specific height */
   min-height: 512px;
@@ -20,7 +20,7 @@
 
 
 .profile {
-  background-image: url("img/profile.jpg");
+  background-image: url("../img/gif/0001.gif");
   background-position: center;
   background-size: cover;
   position: fixed;
