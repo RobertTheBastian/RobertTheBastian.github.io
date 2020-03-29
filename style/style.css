@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-
-
-
-
 .parallax {
   /* The image used */
   background-image: url("../img/tl2.jpg");
@@ -25,44 +21,71 @@
   background-size: cover;
   position: fixed;
   top: 6%;
-	width: 160px;
-	height:160px;
-	box-sizing: border-box;
-	border: 4px white solid;
-	border-radius: 50%;
-	overflow:hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+  width: 160px;
+  height: 160px;
+  box-sizing: border-box;
+  border: 4px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+#container {
+  position: relative;
+}
+
+#container canvas,
+#overlay {
+  position: absolute;
+}
+
+canvas {
+  border: 1px solid black;
 }
 
 
+.canvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+
+/* particleground demo */
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media (max-width: 992px) {}
 
-  }
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
-@media (max-width: 576px) {
+@media (max-width: 576px) {}
 
-}
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
@@ -72,13 +95,15 @@
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
 /*--- Fixed Background Image --*/
 figure {
   position: relative;
   width: 100%;
   height: 60%;
-  margin: 0!important;
+  margin: 0 !important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -87,6 +112,7 @@ figure {
   width: 100%;
   height: 100%;
 }
+
 #fixed {
   background-image: url('img/mac.png');
   position: fixed;
@@ -98,12 +124,13 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 
