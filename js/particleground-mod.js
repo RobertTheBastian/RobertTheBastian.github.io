@@ -7,8 +7,6 @@
  *
  * Inspired by http://requestlab.fr/ and http://disruptivebydesign.com/
  */
-
-;
 (function (window, document) {
   "use strict";
   var pluginName = 'particleground';
@@ -234,8 +232,11 @@
      */
     Particle.prototype.draw = function () {
       // Draw circle
+
+      var parallaxSize = (3 - this.layer) + 1;
+
       ctx.beginPath();
-      ctx.arc(this.position.x + this.parallaxOffsetX, this.position.y + this.parallaxOffsetY, options.particleRadius / 2, 0, Math.PI * 2, true);
+      ctx.arc(this.position.x + this.parallaxOffsetX, this.position.y + this.parallaxOffsetY, parallaxSize * (options.particleRadius / 2), 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
 

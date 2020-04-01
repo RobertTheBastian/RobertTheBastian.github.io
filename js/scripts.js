@@ -26,13 +26,18 @@ $(document).ready(function () {
   });
 });
 
+
+
 //Hero particle BG
 $(document).ready(function () {
   $('#particles').particleground({
-    dotColor: '#f',
-    lineColor: '#bf7c89',
-    maxSpeedX: 0.9,
-    maxSpeedY: 0.9,
+    dotColor: '#e8e8e8',
+    lineColor: '#f5f5f5',
+    maxSpeedX: 0.3,
+    maxSpeedY: 0.3,
+    parallaxMultiplier: 5,
 
   });
 });
+
+//var parallax = $('#particles').parallax();
