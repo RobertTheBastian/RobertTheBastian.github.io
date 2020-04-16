@@ -7,6 +7,23 @@
  *
  * Inspired by http://requestlab.fr/ and http://disruptivebydesign.com/
  */
+function getFillColour() {
+
+  var cols = [
+    '#ff6459',
+    '#ffff59',
+    '#86ff82',
+    '#82ecff',
+  ];
+
+  var colorIndex = Math.floor(Math.random() * cols.length);
+
+  return cols[colorIndex];
+
+}
+
+
+
 (function (window, document) {
   "use strict";
   var pluginName = 'particleground';
@@ -102,7 +119,7 @@
     function styleCanvas() {
       canvas.width = element.offsetWidth;
       canvas.height = element.offsetHeight;
-      ctx.fillStyle = options.dotColor;
+      //  ctx.fillStyle = options.dotColor;
       ctx.strokeStyle = options.lineColor;
       ctx.lineWidth = options.lineWidth;
     }
@@ -194,6 +211,7 @@
       this.layer = Math.ceil(Math.random() * 3);
       this.parallaxOffsetX = 0;
       this.parallaxOffsetY = 0;
+      this.ptCol = getFillColour();
       // Initial particle position
       this.position = {
         x: Math.ceil(Math.random() * canvas.width),
@@ -233,11 +251,15 @@
     Particle.prototype.draw = function () {
       // Draw circle
 
-      var parallaxSize = (3 - this.layer) + 1;
+
+      var parallaxSize = (3 - this.layer) + 2;
+
+      parallaxSize /= 3;
 
       ctx.beginPath();
       ctx.arc(this.position.x + this.parallaxOffsetX, this.position.y + this.parallaxOffsetY, parallaxSize * (options.particleRadius / 2), 0, Math.PI * 2, true);
       ctx.closePath();
+      ctx.fillStyle = this.ptCol;
       ctx.fill();
 
       // Draw lines

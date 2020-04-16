@@ -35,7 +35,10 @@ $(document).ready(function () {
     lineColor: '#f5f5f5',
     maxSpeedX: 0.3,
     maxSpeedY: 0.3,
-    parallaxMultiplier: 5,
+    lineWidth: 0.2,
+    proximity: 150,
+    density: 7500,
+    parallaxMultiplier: 10,
 
   });
 });
