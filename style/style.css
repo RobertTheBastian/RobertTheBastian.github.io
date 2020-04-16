@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.parallax {
-  /* The image used */
-  background-image: url("../img/tl2.jpg");
-
-  /* Set a specific height */
-  min-height: 512px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 .profile {
   background-image: url("../img/gif/0001.gif");

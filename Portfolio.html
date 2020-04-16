@@ -6,12 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Robert Sebastian</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="js/scripts.js"> </script>
-	<script src="js/particleground.js"> </script>
 	<link href="style/style.css" rel="stylesheet">
 	<link href="style/theme.css" rel="stylesheet">
 </head>
@@ -50,10 +44,28 @@
 		</nav>
 
 		<!--- Hero -->
-		<div id="container">
-			<canvas></canvas>
-			<div id="overlay">This div is over the canvas</div>
-		</div>
+		<section id="hero">
+
+			<div id="particles" class="bg-light" style="position: absolute; width:100%; height:100%;">
+			</div>
+
+			<div class="container-fluid" style="position: absolute; z-index: 1;">
+
+				<div class="row justify-content-center align-items-center" style="height: 100vh;">
+					<div class="card" style="width: 20vw;">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's
+								content.</p>
+							<a href="#" class="card-link">Card link</a>
+							<a href="#" class="card-link">Another link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 		<!--- About Me -->
@@ -73,6 +85,13 @@
 
 		<!--- Footer -->
 
+
+		<!--Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"> </script>
+		<script src="js/particleground-mod.js"> </script>
 	</body>
 
 </html>
