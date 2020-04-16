@@ -29,7 +29,7 @@ $(document).ready(function () {
 //Hero particle BG
 $(document).ready(function () {
   $('#particles').particleground({
-    dotColor: '#f',
+    dotColor: '#ff3358',
     lineColor: '#bf7c89',
     maxSpeedX: 0.9,
     maxSpeedY: 0.9,
