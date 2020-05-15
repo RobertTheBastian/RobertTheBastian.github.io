@@ -43,15 +43,15 @@ canvas {
 /*eye stuff */
 .eye {
   margin-right: 18px;
-  width: 16px;
+  width: 18px;
   /*required, but can be any value*/
-  height: 16px;
+  height: 14px;
   /*required, but can be any value*/
-  background: #fff;
+  background: rgb(226, 226, 226);
   /*recommended, but can any value*/
   border-radius: 100%;
   /*optional*/
-  border: 2px solid rgb(20, 20, 20);
+  border: 1px solid rgb(65, 65, 65);
   /*optional*/
   float: inline-start;
   cursor: none;
@@ -60,9 +60,9 @@ canvas {
 .iris {
   background: #000;
   /*recommended, but can any value*/
-  width: 6px;
+  width: 3px;
   /*required, but can be any value*/
-  height: 6px;
+  height: 3px;
   /*required, but can be any value*/
   border-radius: 50%;
   /*optional*/
@@ -70,8 +70,8 @@ canvas {
 }
 
 #wrap {
-  margin-top: 43%;
-  margin-left: 37%;
+  margin-top: 44%;
+  margin-left: 35%;
 
 }
 
