@@ -40,6 +40,40 @@ canvas {
   width: 100vw;
 }
 
+/*eye stuff */
+.eye {
+  margin-right: 18px;
+  width: 16px;
+  /*required, but can be any value*/
+  height: 16px;
+  /*required, but can be any value*/
+  background: #fff;
+  /*recommended, but can any value*/
+  border-radius: 100%;
+  /*optional*/
+  border: 2px solid rgb(20, 20, 20);
+  /*optional*/
+  float: inline-start;
+  cursor: none;
+}
+
+.iris {
+  background: #000;
+  /*recommended, but can any value*/
+  width: 6px;
+  /*required, but can be any value*/
+  height: 6px;
+  /*required, but can be any value*/
+  border-radius: 50%;
+  /*optional*/
+  /*border: 4px solid #0ea;*/
+}
+
+#wrap {
+  margin-top: 43%;
+  margin-left: 37%;
+
+}
 
 /* particleground demo */
 #particles {
